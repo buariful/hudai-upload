@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.get('/', (req, res) => {
 
     console.log(path.join(__dirname + '/index.html'))
-    res.sendFile(path.join(__dirname + '/index.html'))
+    res.send("amar sonar bangla")
 })
 
 app.get('/abc', (req, res) => {
